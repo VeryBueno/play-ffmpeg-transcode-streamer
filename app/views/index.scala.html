@@ -1,0 +1,27 @@
+@()
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Video</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+    </head>
+    <body>
+
+        <video id="video" poster="/video.jpg" preload="metadata"></video>
+
+        <br/>
+
+        <span id="elapsedTime"></span>
+
+        <input type="range" value="0" id="videoSeeker">
+
+        <span id="videoDuration"></span>
+
+        <br/>
+        <button id="playPause">Play/Pause</button>
+
+        <script src="@routes.Assets.versioned("javascripts/main.js")" type="text/javascript"></script>
+
+    </body>
+</html>
