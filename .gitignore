@@ -1,0 +1,5 @@
+.idea/
+.g8/
+.gradle/
+target/
+project/target/
